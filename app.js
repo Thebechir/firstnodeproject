@@ -38,6 +38,9 @@ const connect = require('./database/connect');
 const todoAPI = require ('./routes/todoAPI')
 
 const formAPI = require ('./routes/formAPI')
+const tagAPI = require ('./routes/tagAPI')
+const tutoAPI = require ('./routes/tutoAPI')
+const userdetailsAPI = require ('./routes/userdetailsAPI')
 
 // the commented part is separted into two files to organize 
 // the commented part is separted into two files to organize 
@@ -133,3 +136,6 @@ const formAPI = require ('./routes/formAPI')
 // use routing to be able to read it
 app.use('',todoAPI)
 app.use('',formAPI)
+app.use('',tagAPI)
+app.use('',tutoAPI)
+app.use('',userdetailsAPI)

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const todoSchema = mongoose.Schema (
+const tutoSchema = mongoose.Schema (
    { title: String ,
     description : String},
     {
@@ -9,7 +9,4 @@ const todoSchema = mongoose.Schema (
     }
 );
 
-module.exports = mongoose.model('todo',todoSchema);
-
-
-
+module.exports = mongoose.model('tuto',tutoSchema);
